@@ -41,7 +41,7 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
 })
 
 // input for 2nd donate btn
-document.getElementById('donate-btn1').addEventListener('click', function(){
+document.getElementById('donate-btn2').addEventListener('click', function(){
     const donate = getInputFieldValueById('input-donate2');
     const balance = getTextFieldById('account-balance');
 
@@ -61,7 +61,7 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
     const singleDonateNumber = parseFloat(singleDonate);
 
     const currentSingleDonate = donate + singleDonateNumber;
-    document.getElementById('donation').innerText = currentSingleDonate;
+    document.getElementById('donation2').innerText = currentSingleDonate;
     document.getElementById('account-balance').innerText = newBalance;
 
     document.getElementById('no-history').classList.add('hidden');
@@ -74,7 +74,7 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
     const div = document.createElement('div');
         div.classList.add('border-2', 'p-8', 'rounded-xl', 'mb-6');
         div.innerHTML = `
-            <p class="font-bold text-xl text-gray-clr">${donate} Taka is Donated for famine-2024 at Noakhali, Bangladesh. </p>
+            <p class="font-bold text-xl text-gray-clr">${donate} Taka is Donated for Flood Relief in Feni,Bangladesh.</p>
             <p class=" text-gray-clr text-opacity-70">Date: ${fullDateAndTime}</p>
         `
         document.getElementById('history-container').appendChild(div);
