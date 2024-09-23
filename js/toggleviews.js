@@ -1,10 +1,5 @@
 document.getElementById('donation-btn').addEventListener('click', function(){
-    showSectionById('donation-container');
-    
-    
-    
-
-    
+    showSectionById('donation-container');    
 })
 
 document.getElementById('history-btn').addEventListener('click', function(){
