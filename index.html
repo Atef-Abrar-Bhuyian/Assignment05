@@ -79,8 +79,8 @@
   
         <!-- Toggle Btn Start Here -->
         <div class="flex gap-4 justify-center">
-          <button class="btn bg-primary-color font-bold border-2 w-28">Donation</button>
-          <button class="btn bg-white border-2 w-28 text-gray-clr">History</button>
+          <button id="donation-btn" class="btn bg-primary-color font-bold border-2 w-28">Donation</button>
+          <button id="history-btn" class="btn bg-white border-2 w-28 text-gray-clr">History</button>
         </div>
         <!-- Toggle Btn Ends Here -->
         <div class="divider"></div>
@@ -91,7 +91,7 @@
     <!-- Main Start Here -->
     <main>
       <section class="w-11/12 mx-auto">
-        <div class="space-y-8">
+        <div id="donation-container" class="space-y-8">
           <!-- Banner 1 -->
         <div class="hero border-2 rounded-xl">
           <div class="hero-content flex-col lg:flex-row p-8 gap-8">
@@ -115,8 +115,6 @@
             </div>
           </div>
         </div>
-
-
         <!-- Banner 2 -->
         <div class="hero border-2 rounded-xl">
           <div class="hero-content flex-col lg:flex-row p-8 gap-8">
@@ -140,7 +138,6 @@
             </div>
           </div>
         </div>
-
         <!-- Banner 3 -->
         <div class="hero border-2 rounded-xl">
           <div class="hero-content flex-col lg:flex-row p-8 gap-8">
@@ -164,13 +161,18 @@
             </div>
           </div>
         </div>
-        
+        </div>
 
-        <!-- Banner 2 -->
-        
-
-      </div>
+        <div id="history-container" class="hidden">
+          <div class="flex flex-col gap-4 items-center">
+          <img class="w-96" src="assets/donate.jpg" alt="">
+          <h3 class="text-3xl text-gray-clr font-bold">No Donation Yet</h3>
+          </div>
+        </div>
     </main>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/toggleviews.js"></script>
     <!-- Main Ends Here -->
   </body>
 </html>
