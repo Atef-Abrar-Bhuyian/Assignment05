@@ -56,22 +56,6 @@
     </script>
   </head>
 
-  <!-- Open the modal using ID.showModal() method -->
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box flex flex-col items-center space-y-4">
-    <h3 class="text-4xl font-bold">Congrats!</h3>
-    <img src="assets/coin.png" alt="">
-    <p class="text-gray-clr text-opacity-80 mt-2">You Have Donated for Humankind</p>
-    <h3 class="text-xl font-bold">Successfully</h3>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close Confirmation</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-
   <body class="lexend-font">
     <!-- Header Start Here -->
     <header class="mb-8 sticky top-0 backdrop-blur-lg z-10 header-blur">
@@ -79,7 +63,7 @@
       <div class="mb-4 md:mb-12 bg-navbar-background-color bg-opacity-50">
         <div class="navbar h-24 w-11/12 mx-auto">
           <div class="navbar-start">
-            <a class="btn btn-ghost bg-primary-color text-xl">Blog</a>
+            <a class="btn btn-ghost bg-primary-color text-xl hover:text-purple-600">Blog</a>
           </div>
           <!-- Center For Mobile -->
           <div class="navbar-center md:hidden">
@@ -87,7 +71,7 @@
           </div>
 
           <!-- Center For Large Screen -->
-          <div class="navbar-center hidden lg:flex gap-4">
+          <div class="navbar-center hidden md:flex gap-4">
             <img src="assets/logo.png" alt="" />
             <a class="font-bold text-xl bg-transparent" href="index.html">
               Donate Bangladesh</a
@@ -95,7 +79,9 @@
           </div>
           <div class="navbar-end flex gap-3">
             <img src="assets/coin.png" alt="coin image" />
-            <p class="font-medium text-xl"><span id="account-balance">7000</span> BDT</p>
+            <p class="font-medium text-xl">
+              <span id="account-balance">7000</span> BDT
+            </p>
           </div>
         </div>
       </div>
@@ -105,13 +91,13 @@
       <div class="flex gap-4 justify-center">
         <button
           id="donation-btn"
-          class="btn bg-primary-color font-bold border-2 w-28"
+          class="btn bg-primary-color font-bold border-2 w-28 hover:text-purple-600"
         >
           Donation
         </button>
         <button
           id="history-btn"
-          class="btn bg-white border-2 w-28 text-gray-clr"
+          class="btn bg-white border-2 w-28 text-gray-clr hover:text-purple-600"
         >
           History
         </button>
@@ -149,13 +135,14 @@
                 </p>
                 <div class="flex flex-col gap-4">
                   <input
-                  id="input-donate"
+                    id="input-donate"
                     type="text"
                     placeholder="Write Donation Amount"
                     class="input input-bordered w-full"
                   />
-                  <button id="donate-btn1"
-                    class="btn bg-primary-color text-xl font-semibold text-gray-clr"
+                  <button
+                    id="donate-btn1"
+                    class="btn bg-primary-color text-xl font-semibold text-gray-clr hover:text-purple-600"
                   >
                     Donate Now
                   </button>
@@ -243,11 +230,30 @@
 
         <div id="history-container" class="hidden">
           <div id="no-history" class="flex flex-col gap-4 items-center">
+            <!-- This Image Is Downloaded From Freepik (Copy rights Free) -->
             <img class="w-96" src="assets/donate.jpg" alt="" />
             <h3 class="text-3xl text-gray-clr font-bold">No Donation Yet</h3>
           </div>
         </div>
 
+        <!-- Modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box flex flex-col items-center space-y-4">
+            <h3 class="text-4xl font-bold">Congrats!</h3>
+            <img src="assets/coin.png" alt="" />
+            <p class="text-gray-clr text-opacity-80 mt-2">
+              You Have Donated for Humankind
+            </p>
+            <h3 class="text-xl font-bold">Successfully</h3>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </section>
     </main>
 

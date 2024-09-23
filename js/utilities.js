@@ -3,8 +3,17 @@ function showSectionById(id){
     // hide all the sections
     document.getElementById('donation-container').classList.add('hidden');
     document.getElementById('history-container').classList.add('hidden');
+    
     // show the section with the provided id
     document.getElementById(id).classList.remove('hidden');
+    
+}
+
+// toggle background color
+function showActiveBtn(id){
+    document.getElementById('donation-btn').style.backgroundColor = "white";
+    document.getElementById('history-btn').style.backgroundColor = "white";
+    document.getElementById(id).style.backgroundColor ="#B4F461";
 }
 
 // to get the value from input
