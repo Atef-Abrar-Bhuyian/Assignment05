@@ -58,13 +58,15 @@
 
   <!-- Open the modal using ID.showModal() method -->
 <dialog id="my_modal_1" class="modal">
-  <div class="modal-box">
-    <h3 class="text-4xl text-center font-bold">Congrats!</h3>
-    <img class="" src="assets/coin.png" alt="">
+  <div class="modal-box flex flex-col items-center space-y-4">
+    <h3 class="text-4xl font-bold">Congrats!</h3>
+    <img src="assets/coin.png" alt="">
+    <p class="text-gray-clr text-opacity-80 mt-2">You Have Donated for Humankind</p>
+    <h3 class="text-xl font-bold">Successfully</h3>
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn">Close Confirmation</button>
       </form>
     </div>
   </div>
