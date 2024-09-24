@@ -32,7 +32,7 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
     const div = document.createElement('div');
         div.classList.add('border-2', 'p-8', 'rounded-xl', 'mb-6');
         div.innerHTML = `
-            <p class="font-bold text-xl text-gray-clr">${donate} Taka is Donated for famine-2024 at Noakhali, Bangladesh. </p>
+            <p class="font-bold text-xl text-gray-clr">${donate} Taka is Donated for Flood at Noakhali, Bangladesh. </p>
             <p class=" text-gray-clr text-opacity-70">Date: ${fullDateAndTime}</p>
         `
         document.getElementById('history-container').appendChild(div);
