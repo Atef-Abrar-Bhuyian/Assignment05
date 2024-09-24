@@ -4,12 +4,12 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
     const balance = getTextFieldById('account-balance');
 
     if(isNaN(donate) || donate <= 0){
-        alert('You Did Something Wrong, Please Try again');
+        my_modal_2.showModal();
         return;
     }
 
     if(balance<=0 || donate>balance){
-        alert('Insufficient Balance');
+        my_modal_3.showModal();
         return;
     }
 
@@ -46,12 +46,12 @@ document.getElementById('donate-btn2').addEventListener('click', function(){
     const balance = getTextFieldById('account-balance');
 
     if(isNaN(donate) || donate <= 0){
-        alert('You Did Something Wrong, Please Try again');
+        my_modal_2.showModal();
         return;
     }
 
     if(balance<=0 || donate>balance){
-        alert('Insufficient Balance');
+        my_modal_3.showModal();
         return;
     }
 
@@ -88,12 +88,12 @@ document.getElementById('donate-btn3').addEventListener('click', function(){
     const balance = getTextFieldById('account-balance');
 
     if(isNaN(donate) || donate <= 0){
-        alert('You Did Something Wrong, Please Try again');
+        my_modal_2.showModal();
         return;
     }
 
     if(balance<=0 || donate>balance){
-        alert('Insufficient Balance');
+        my_modal_3.showModal();
         return;
     }
 

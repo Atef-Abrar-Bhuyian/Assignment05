@@ -257,7 +257,7 @@
           </div>
         </div>
 
-        <!-- Modal -->
+        <!-- Success Modal -->
         <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_1" class="modal">
           <div class="modal-box flex flex-col items-center space-y-4">
@@ -267,6 +267,50 @@
               You Have Donated for Humankind
             </p>
             <h3 class="text-xl font-bold">Successfully</h3>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-primary-color text-white hover:bg-white hover:text-purple-800">
+                  Close Confirmation
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
+
+        <!-- Failed Modal1 -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_2" class="modal">
+          <div class="modal-box flex flex-col items-center space-y-4">
+            <h3 class="text-4xl font-bold">Opps!</h3>
+            <img src="https://img.icons8.com/?size=100&id=13176&format=png&color=000000" alt="" />
+            <p class="text-gray-clr text-opacity-80 mt-2">
+              You Did Something Wrong
+            </p>
+            <h3 class="text-xl font-bold">Please, Try Again</h3>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-primary-color text-white hover:bg-white hover:text-purple-800">
+                  Close Confirmation
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
+
+        <!-- Failed Modal2 -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_3" class="modal">
+          <div class="modal-box flex flex-col items-center space-y-4">
+            <h3 class="text-4xl font-bold">Opps!</h3>
+            <img src="https://img.icons8.com/?size=100&id=13176&format=png&color=000000" alt="" />
+            <p class="text-gray-clr text-opacity-80 mt-2">
+              Insufficient Balance
+            </p>
+            <h3 class="text-xl font-bold">Please, Add Funds To Proceed</h3>
             <div class="modal-action">
               <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
