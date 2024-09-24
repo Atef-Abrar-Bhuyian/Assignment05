@@ -58,12 +58,18 @@
 
   <body class="lexend-font">
     <!-- Header Start Here -->
-    <header class="mb-8 sticky top-0 backdrop-blur-lg z-10 header-blur">
+    <header
+      class="mb-8 border-b-2 sticky top-0 backdrop-blur-lg z-10 header-blur"
+    >
       <!-- NavBar Start Here -->
       <div class="mb-4 md:mb-10 bg-navbar-background-color bg-opacity-50">
         <div class="navbar h-24 md:w-11/12 mx-auto">
           <div class="navbar-start">
-            <a class="btn btn-ghost bg-primary-color text-xl hover:bg-white hover:text-purple-600" href="blog.html">Blog</a>
+            <a
+              class="btn btn-ghost bg-primary-color text-xl hover:bg-white hover:text-purple-600"
+              href="blog.html"
+              >Blog</a
+            >
           </div>
           <!-- Center For Mobile -->
           <div class="navbar-center md:hidden">
@@ -80,7 +86,7 @@
           <div class="navbar-end flex gap-3">
             <img src="assets/coin.png" alt="coin image" />
             <p class="font-medium text-xl">
-              <span id="account-balance">7000</span> BDT
+              <span id="account-balance">9000</span> BDT
             </p>
           </div>
         </div>
@@ -88,7 +94,7 @@
       <!-- Navbar Ends Here -->
 
       <!-- Toggle Btn Start Here -->
-      <div class="flex gap-4 justify-center">
+      <div class="flex gap-4 justify-center pb-3">
         <button
           id="donation-btn"
           class="btn bg-primary-color font-bold border-2 w-28 hover:bg-white hover:text-purple-600"
@@ -103,14 +109,12 @@
         </button>
       </div>
       <!-- Toggle Btn Ends Here -->
-      <div class="divider"></div>
     </header>
     <!-- Header Ends Here -->
 
     <!-- Main Start Here -->
     <main class="mb-20">
       <section class="w-11/12 mx-auto">
-
         <!-- Donation Part -->
         <div id="donation-container" class="space-y-8">
           <!-- Banner 1 -->
@@ -168,7 +172,14 @@
                   Donate for Flood Relief in Feni,Bangladesh
                 </h1>
                 <p class="py-6 text-gray-clr opacity-70 text-justify">
-                  The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives
+                  in the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating
+                  today to assist those in urgent need.
                 </p>
                 <div class="flex flex-col gap-4">
                   <input
@@ -191,7 +202,10 @@
           <!-- Banner 3 -->
           <div class="hero border-2 rounded-xl">
             <div class="hero-content flex-col lg:flex-row p-8 gap-8">
-              <img src="assets/quota-protest.png" class="rounded-lg shadow-2xl" />
+              <img
+                src="assets/quota-protest.png"
+                class="rounded-lg shadow-2xl"
+              />
               <div>
                 <div
                   class="bg-base-300 flex justify-center gap-2 h-10 w-32 rounded-md place-items-center mb-4"
@@ -203,7 +217,15 @@
                   Aid for Injured in the Quota Movement
                 </h1>
                 <p class="py-6 text-gray-clr opacity-70 text-justify">
-                  The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                  The recent Quota movement has resulted in numerous injuries
+                  and significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance, rehabilitation, and
+                  necessary supplies to those affected. By contributing, you
+                  help ensure that injured individuals receive the care and
+                  support they need during this challenging time. Every donation
+                  plays a vital role in alleviating their suffering and aiding
+                  in their recovery. Please consider making a donation to
+                  support these brave individuals in their time of need.
                 </p>
                 <div class="flex flex-col gap-4">
                   <input
@@ -224,13 +246,14 @@
           </div>
         </div>
 
-
         <!-- History Part -->
         <div id="history-container" class="hidden">
           <div id="no-history" class="flex flex-col gap-4 items-center">
             <!-- This Image Is Downloaded From Freepik (Copy rights Free) -->
             <img class="w-96" src="assets/donate.jpg" alt="" />
-            <h3 class="text-3xl text-gray-clr font-bold text-center">No Donations Have Been Received Yet</h3>
+            <h3 class="text-3xl text-purple-500 font-bold text-center">
+              No Donations Have Been Received Yet
+            </h3>
           </div>
         </div>
 
@@ -247,7 +270,9 @@
             <div class="modal-action">
               <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn hover:bg-white hover:text-purple-600">Close Confirmation</button>
+                <button class="btn hover:bg-white hover:text-purple-600">
+                  Close Confirmation
+                </button>
               </form>
             </div>
           </div>
@@ -255,7 +280,13 @@
       </section>
     </main>
 
-    <footer class="bg-navbar-background-color min-h-28"></footer>
+    <footer
+      class="bg-navbar-background-color min-h-28 flex justify-center items-center"
+    >
+      <p class="text-center font-semibold text-violet-500 text-opacity-70">
+        All Right Reserved @Donate Bangladesh
+      </p>
+    </footer>
 
     <script src="js/utilities.js"></script>
     <script src="js/toggleviews.js"></script>
