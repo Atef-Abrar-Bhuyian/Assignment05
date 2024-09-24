@@ -12,8 +12,11 @@ function showSectionById(id){
 // toggle background color
 function showActiveBtn(id){
     document.getElementById('donation-btn').style.backgroundColor = "white";
+    document.getElementById('donation-btn').style.color = "#36013F";
     document.getElementById('history-btn').style.backgroundColor = "white";
-    document.getElementById(id).style.backgroundColor ="#B4F461";
+    document.getElementById('history-btn').style.color = "#36013F";
+    document.getElementById(id).style.backgroundColor ="#36013F";
+    document.getElementById(id).style.color ="white";
 }
 
 // to get the value from input
